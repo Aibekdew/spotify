@@ -3,7 +3,6 @@ import { useGetFeaturedPlaylistQuery } from "@/redux/api/playlist";
 import scss from "./FeaturedPlaylist.module.scss";
 import { useRouter } from "next/navigation";
 import { IoPlaySharp } from "react-icons/io5";
-import { useEffect, useState } from "react";
 
 const FeaturedPlaylist = () => {
   const { data } = useGetFeaturedPlaylistQuery(6);
