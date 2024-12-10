@@ -1,0 +1,69 @@
+.NavBar {
+  padding: 10px 0;
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: rgb(171, 167, 167);
+        font-size: clamp(20px, 3vw, 26px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h4 {
+        font-size: clamp(8px, 4vw, 12px);
+        font-weight: 400;
+        color: rgb(168, 165, 165);
+      }
+    }
+    .search {
+      .sear {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: rgb(171, 167, 167);
+        font-size: clamp(20px, 3vw, 26px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h4 {
+        font-size: clamp(8px, 4vw, 12px);
+        font-weight: 400;
+        color: rgb(168, 165, 165);
+      }
+    }
+    .playlist {
+      .playImg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: rgb(171, 167, 167);
+        font-size: clamp(20px, 5vw, 26px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      h4 {
+        font-size: clamp(10px, 2vw, 12px);
+        font-weight: 400;
+        color: rgb(168, 165, 165);
+      }
+    }
+  }
+}

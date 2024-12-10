@@ -1,0 +1,19 @@
+.SearchContent {
+  padding: 30px 0;
+  .content {
+    .category {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 20px;
+      flex-wrap: wrap;
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+      }
+      .categotyImg {
+        border-radius: 10px;
+      }
+    }
+  }
+}

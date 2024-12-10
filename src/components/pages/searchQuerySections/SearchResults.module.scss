@@ -1,0 +1,179 @@
+.SearchResults {
+  padding: 30px 0;
+  .content {
+    .tracks {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .popular {
+        h1 {
+          padding: 5px 0;
+          font-size: 20px;
+        }
+        .popular_playlist {
+          cursor: pointer;
+          width: 390px;
+          height: 200px;
+          background: rgba(90, 87, 87, 0.179);
+          border-radius: 10px;
+          padding: 20px;
+          &:hover {
+            background: rgba(90, 87, 87, 0.379);
+            .track {
+              .text_playlist {
+                .green {
+                  opacity: 1;
+                  margin-top: -40px;
+                  transition: 0.3s;
+                }
+              }
+            }
+          }
+          .track {
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 15px;
+
+            // &.active {
+            //   background: gray;
+            //   color: #fff;
+            // }
+            img {
+              width: 90px;
+              height: 90px;
+              border-radius: 10px;
+            }
+            h2 {
+              font-weight: 500;
+              font-size: 25px;
+              padding: 15px 0 5px 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 11px;
+                color: greenyellow;
+              }
+            }
+            .text_playlist {
+              .green {
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                opacity: 0;
+                height: 50px;
+                margin-left: 300px;
+                margin-top: -20px;
+                border-radius: 50%;
+                background: rgb(39, 194, 39);
+                &:hover {
+                  background: rgb(30, 238, 30);
+                }
+                span {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-left: 3px;
+                  font-size: 20px;
+                  color: black;
+                }
+              }
+            }
+          }
+        }
+      }
+      .treki {
+        width: 800px;
+        .treki_playlist {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          .track {
+            border-radius: 5px;
+            padding: 5px 10px;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            align-items: center;
+            &:hover {
+              background: rgba(128, 128, 128, 0.196);
+            }
+            .track_img {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              img {
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+              }
+              .artist_name {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                h2 {
+                  font-size: 15px;
+                  font-weight: 500;
+                  padding: 2px 0;
+                }
+                h3 {
+                  padding: 2px 0;
+                  font-size: 13px;
+                  font-weight: 500;
+                  color: rgb(179, 176, 176);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    // .tracks {
+    //   padding: 50px 10px;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   flex-wrap: wrap;
+    //   gap: 50px;
+
+    // .track {
+    //   display: flex;
+    //   align-items: start;
+    //   justify-content: center;
+    //   flex-direction: column;
+    //   border-radius: 15px;
+
+    //   &.active {
+    //     background: gray;
+    //     color: #fff;
+    //   }
+    //   img {
+    //     width: 320px;
+    //     height: 320px;
+    //     border-radius: 15px 15px 0 0;
+    //   }
+    //   h2 {
+    //     font-weight: 300;
+    //     padding: 10px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     span {
+    //       display: flex;
+    //       align-items: center;
+    //       justify-content: center;
+    //       margin-left: 11px;
+    //       color: greenyellow;
+    //     }
+    //   }
+    // }
+    // }
+  }
+}

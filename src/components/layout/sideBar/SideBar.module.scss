@@ -1,0 +1,115 @@
+.SideBar {
+  width: 350px;
+  height: 82.3vh;
+  background-color: rgba(128, 128, 128, 0.183);
+  border-radius: 10px;
+  position: sticky;
+  top: 66px;
+  transition: 0.3s;
+
+  .container {
+    padding: 0 15px;
+    .content {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+
+      .library {
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 10px;
+        cursor: pointer;
+        span {
+          color: grey;
+          transition: 0.3s;
+          &:hover {
+            color: #fff;
+            transition: 0.2s;
+          }
+        }
+      }
+      .media {
+        .blocks {
+          padding: 12px 15px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 325px;
+
+          .file {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            gap: 10px;
+            &:hover {
+              span,
+              h1 {
+                color: #fff;
+                transition: 0.2s;
+              }
+            }
+
+            span {
+              font-size: 24px;
+              color: grey;
+            }
+            h1 {
+              font-size: 14px;
+              color: grey;
+            }
+          }
+          .strelka {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+        }
+      }
+      .playlist {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+        width: 100%;
+        padding: 6px;
+        border-radius: 7px;
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.361);
+          transition: 0.2s;
+        }
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 5px;
+        }
+        .user_name {
+          display: flex;
+          align-items: start;
+          flex-direction: column;
+          gap: 5px;
+          h5 {
+            font-weight: 400;
+            font-size: 14px;
+          }
+          h3 {
+            font-size: 12px;
+            font-weight: 400;
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .SideBar {
+    // display: none;
+  }
+}

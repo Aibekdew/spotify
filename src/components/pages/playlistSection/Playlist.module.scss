@@ -1,0 +1,425 @@
+.PlayList {
+  .content {
+    .user {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .user_img {
+        img {
+          width: 160px;
+          height: 160px;
+          border-radius: 6px;
+        }
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h5 {
+          font-size: 11px;
+          font-weight: 300;
+        }
+
+        h1 {
+          font-size: 80px;
+        }
+
+        h4 {
+          font-size: 12px;
+          font-weight: 300;
+        }
+      }
+    }
+    .play_block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      .video {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        .green {
+          display: flex;
+          cursor: pointer;
+          align-items: center;
+          justify-content: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: rgb(39, 194, 39);
+          &:hover {
+            background: rgb(67, 208, 67);
+          }
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 3px;
+            font-size: 20px;
+            color: black;
+          }
+        }
+
+        .three {
+          color: rgb(212, 210, 210);
+          font-size: 20px;
+          z-index: 11;
+          cursor: pointer;
+          position: relative;
+          svg:hover {
+            color: white;
+            font-size: 21px;
+          }
+          .menu {
+            position: absolute;
+            // left: -125px;
+            top: 25px;
+            z-index: 3;
+            display: flex;
+            align-items: start;
+            justify-content: start;
+            flex-direction: column;
+            width: 250px;
+            height: 320px;
+            border-radius: 5px;
+            padding: 8px;
+            background: rgb(32, 29, 29);
+            opacity: 1;
+            h6 {
+              color: rgb(199, 191, 191);
+              font-size: 10px;
+              margin-left: 15px;
+              margin-bottom: 10px;
+            }
+            .img_none {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              padding: 10px 25px 10px 10px;
+              border-radius: 3px;
+              gap: 10px;
+              &:hover {
+                background: rgba(174, 171, 171, 0.181);
+              }
+              span {
+                display: flex;
+                align-items: center;
+                color: rgb(229, 222, 222);
+              }
+              h5 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(229, 222, 222);
+                font-size: 12px;
+                font-weight: 500;
+              }
+            }
+            .img_block {
+              display: flex;
+              width: 100%;
+              align-items: start;
+              gap: 10px;
+              color: rgb(229, 222, 222);
+              border-radius: 3px;
+              padding: 5px;
+              padding: 10px 55px 10px 10px;
+              &:hover {
+                background: rgba(174, 171, 171, 0.181);
+              }
+              span {
+                display: flex;
+                align-items: center;
+                color: rgb(229, 222, 222);
+              }
+              h5 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(229, 222, 222);
+                font-size: 12px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+      .spisok_play {
+        z-index: 10;
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        &:hover {
+          h6 {
+            color: white;
+          }
+          span {
+            color: white;
+          }
+        }
+
+        h6 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgb(199, 191, 191);
+        }
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: rgb(199, 191, 191);
+          position: relative;
+          .menu {
+            position: absolute;
+            left: -125px;
+            top: 25px;
+            z-index: 3;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            flex-direction: column;
+            width: 150px;
+            height: 120px;
+            border-radius: 5px;
+            padding: 8px;
+            background: rgb(32, 29, 29);
+            opacity: 1;
+            h6 {
+              color: rgb(199, 191, 191);
+              font-size: 10px;
+              margin-left: 15px;
+              margin-bottom: 10px;
+            }
+            .img_none {
+              display: flex;
+              align-items: center;
+              padding: 10px 25px 10px 10px;
+              border-radius: 3px;
+              gap: 10px;
+              &:hover {
+                background: rgba(174, 171, 171, 0.181);
+              }
+              span {
+                display: flex;
+                align-items: center;
+                color: rgb(229, 222, 222);
+              }
+              h5 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(229, 222, 222);
+                font-size: 12px;
+                font-weight: 500;
+              }
+            }
+            .img_block {
+              display: flex;
+              align-items: start;
+              gap: 10px;
+              color: rgb(229, 222, 222);
+              border-radius: 3px;
+              padding: 5px;
+              padding: 10px 55px 10px 10px;
+              &:hover {
+                background: rgba(174, 171, 171, 0.181);
+              }
+              span {
+                display: flex;
+                align-items: center;
+                color: rgb(229, 222, 222);
+              }
+              h5 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: rgb(229, 222, 222);
+                font-size: 12px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+
+      .bg_menu {
+        width: 100%;
+        height: 83vh;
+        position: absolute;
+        top: 65px;
+        left: 0;
+      }
+    }
+    .play {
+      .nazvania {
+        display: flex;
+        padding: 0 20px;
+        align-items: center;
+        justify-content: space-between;
+        .naz {
+          display: flex;
+          max-width: 300px;
+          width: 100%;
+          gap: 20px;
+          align-items: center;
+          span {
+            font-size: 16px;
+            font-weight: 400;
+            color: rgb(199, 191, 191);
+          }
+        }
+        h4 {
+          font-size: 13px;
+          max-width: 390px;
+          width: 100%;
+          font-weight: 400;
+          color: rgb(199, 191, 191);
+        }
+        .ndata {
+          font-size: 13px;
+          font-weight: 400;
+          max-width: 195px;
+          width: 100%;
+          color: rgb(199, 191, 191);
+        }
+        h3 {
+          font-size: 13px;
+          font-weight: 400;
+          max-width: 250px;
+          width: 100%;
+          color: rgb(199, 191, 191);
+        }
+        .time {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          font-size: 20px;
+          color: rgb(199, 191, 191);
+          margin-right: 25px;
+        }
+      }
+      .width {
+        width: 100%;
+        height: 0.2px;
+        background: grey;
+        margin-top: 10px;
+      }
+      .music {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        // gap: 15px;
+        .track {
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          max-width: 1300px;
+          height: 55px;
+          width: 100%;
+          &:hover {
+            background: rgba(236, 231, 231, 0.1);
+            border-radius: 5px;
+            .nomer {
+              .index {
+                display: none;
+              }
+              .stop {
+                display: block;
+              }
+            }
+          }
+          .nomer {
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .name_artist {
+              display: flex;
+              align-items: start;
+              flex-direction: column;
+              gap: 5px;
+              h2 {
+                font-size: 14px;
+                font-weight: 500;
+              }
+              h3 {
+                font-size: 12px;
+                font-weight: 500;
+                color: rgb(190, 184, 184);
+              }
+            }
+            .index {
+              display: flex;
+              align-items: center;
+              width: 20px;
+              height: 20px;
+              color: rgb(166, 161, 161);
+              display: block;
+              width: 20px;
+              height: 20px;
+              &:hover {
+                display: none;
+              }
+            }
+            .stop {
+              color: white;
+              font-size: 18px;
+              display: none;
+              align-items: center;
+              justify-content: start;
+              width: 20px;
+              // margin-left: -3px;
+              height: 20px;
+              svg {
+                display: flex;
+                margin-left: -3px;
+              }
+            }
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 5px;
+            }
+          }
+          .music_name {
+            font-size: 12px;
+            color: rgb(190, 184, 184);
+            font-weight: 500;
+            max-width: 248px;
+            width: 100%;
+          }
+          .data {
+            display: flex;
+            max-width: 295px;
+            width: 100%;
+
+            h3 {
+              font-size: 12px;
+              color: rgb(190, 184, 184);
+              font-weight: 500;
+            }
+          }
+          .hours {
+            max-width: 50px;
+            width: 100%;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            font-size: 12px;
+            color: rgb(190, 184, 184);
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

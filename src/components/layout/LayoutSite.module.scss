@@ -1,0 +1,38 @@
+.LayoutSite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  @media (max-width: 768px) {
+    header {
+      display: none;
+    }
+  }
+  .home {
+    display: flex;
+    gap: 4.5px;
+    background-color: black;
+
+    .sideBar {
+      display: block;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    main {
+      width: 100%;
+      background-color: rgba(128, 128, 128, 0.183);
+      overflow: scroll;
+      height: 82.3vh;
+      scrollbar-width: none;
+      border-radius: 10px;
+      @media (max-width: 768px) {
+        height: 88vh;
+      }
+    }
+  }
+  footer {
+    margin-top: auto;
+  }
+}
